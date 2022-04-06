@@ -17,14 +17,15 @@ def email():
 
 # username generator
 def username():
-    print(first_name[0:3] + "_" + last_name[0:5])
+    print(first_name[0:3].lower() + "_" + last_name[0:5].lower())
 
 
 # new user contact info
 def contact():
     greeting()
-    print("Email:") + email()
-    
+    print("Email:")
+    email()
+    print("Username: ")
     username()
 
 contact()
